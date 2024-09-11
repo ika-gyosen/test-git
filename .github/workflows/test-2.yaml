@@ -1,14 +1,14 @@
 name: Test2
 on:
-workflow_dispatch:
-  branches:
-    - main/*
+  workflow_dispatch:
+    branches:
+      - main/*
 
-  jobs:
-    printLog:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Print log
-          run: echo "Hello World222222"
+jobs:
+  printLog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Print log
+        run: echo "Hello World222222"
